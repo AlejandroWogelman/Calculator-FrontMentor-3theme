@@ -1,0 +1,317 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    --background-general:  hsl(222, 26%, 31%) ;
+    --background-keypad: hsl(223, 31%, 20%);
+    --screen-background: hsl(224, 36%, 15%);
+
+    /*keys*/
+    --bg-del-reset:  hsl(225, 21%, 49%);
+    --shadow-del-reset: hsl(224, 28%, 35%);
+
+    --result: hsl(6, 63%, 50%);
+    --shadow-result: hsl(6, 70%, 34%);
+
+    --keys:  hsl(30, 25%, 89%);
+    --shadow-keys : hsl(28, 16%, 65%);
+
+    --color-result: white;
+    /*Text*/
+
+    --color:white;
+
+    --numbers: hsl(221, 14%, 31%);
+    --text: hsl(0, 0, 100%);
+    background-color: var(--background-general);
+}
+
+body.theme-2{
+    --background-general: hsl(0, 0%, 90%);
+    --background-keypad:hsl(0, 5%, 81%);
+    --screen-background: hsl(0, 0%, 93%);
+
+    /*keys*/
+    --bg-del-reset:  hsl(185, 42%, 37%);
+    --shadow-del-reset:  hsl(185, 58%, 25%);
+
+    --result: hsl(25, 98%, 40%);
+    --shadow-result: hsl(25, 99%, 27%);
+
+    --keys:  hsl(45, 7%, 89%);
+    --shadow-keys : hsl(35, 11%, 61%);
+
+    --color-result: white;
+    /*Text*/
+
+    --color:black;
+
+    --numbers: hsl(60, 10%, 19%);
+    --text: hsl(0, 0, 100%);
+}
+
+body.theme-3{
+    --background-general:hsl(268, 75%, 9%);
+    --background-keypad:hsl(268, 71%, 12%);
+    --screen-background: hsl(268, 71%, 12%);
+
+    /*keys*/
+    --bg-del-reset:  hsl(281, 89%, 26%);
+    --shadow-del-reset: hsl(285, 91%, 52%);
+
+    --result: hsl(176, 100%, 44%);
+    --shadow-result:  hsl(177, 92%, 70%);
+
+    --keys:   hsl(268, 47%, 21%);
+    --shadow-keys : hsl(290, 70%, 36%);
+
+    --color-result: black;
+    /*Text*/
+    --color:hsl(52, 100%, 62%);
+
+    --numbers: hsl(52, 100%, 62%);
+    --text-color:  hsl(0, 0, 100%);
+}
+
+
+.container{
+    margin: 0 auto;
+    height:1000px;
+    width: 800px;
+
+    display: flex;  
+    flex-direction: column;
+    align-items: center;  
+    padding: 30px;
+    font-size: 32px;
+   
+    font-family: 'Spartan', sans-serif !important;
+}
+
+@media screen and (max-width: 400px) {
+    .container{
+        height: 700px;
+        width: 390px;
+        padding: 15px;
+        font-size: 16px
+    }
+}
+
+.box-1{
+    color: var(--color);
+    width: 90%;
+    height: 13%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-family: 'Spartan', sans-serif !important;
+}
+h6{
+    position: relative;
+    bottom: -17px
+}
+@media screen and (max-width:400px) {
+    h6{
+        position: relative;
+        bottom: -8px;
+        right: 10px;
+    }
+}
+
+h3{
+    width: 70%;
+    font-size: 30px;
+}
+.theme-select{
+    width: 60px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--background-keypad);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+@media screen and (max-width:400px){
+    .theme-select{
+        width: 50px;
+        height: 20px;
+    }
+}
+
+.theme-select div{
+    width: 20px;
+    height: 20px;
+    background-color: var(--result);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+@media screen and (max-width: 400px) {
+    .theme-select div{
+        width: 17px;
+        height: 17px;
+    }
+}
+
+body.theme-2 .theme-select div{
+    position: relative;
+    left: 20px;
+}
+@media screen and (max-width: 400px) {
+    body.theme-2 .theme-select div{
+        left: 16px;
+    }
+}
+
+body.theme-3 .theme-select div{
+    position: relative;
+    left: 40px;
+}
+
+@media screen and (max-width: 400px) {
+    body.theme-3 .theme-select div{
+        left: 37px;
+    }
+}
+
+.box-2{
+    width: 90%;
+    height: 15%;
+    background-color: var(--screen-background) ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+input{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--screen-background);
+    border: none;
+    font-size: 55px;
+    padding: 0px 40px 0px 40px;
+    color: var(--color);
+    text-align: right;
+    font-family: 'Spartan', sans-serif ;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+@media screen and (max-width:400px) {
+    input{
+        font-size: 40px;
+        padding: 0px 15px 0px 15px
+    }
+}
+
+.box-3{
+    margin-top: 20px;
+    background-color: var(--background-keypad);
+    padding: 9px 18px;
+    height: 60%;
+    width: 90%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+@media screen and (max-width:400px) {
+    .box-3 {
+        margin-top: 10px;
+        padding: 4.5px 9px
+    }
+}
+.btns{
+    height: 95%;
+    margin: 0 auto;
+    padding-left: 25px;
+}
+
+@media screen and (max-width:400px) {
+    .btns{
+        height: 95%;
+        margin: 0 auto;
+        padding-left: 10px;
+    }
+    }
+
+.box-3 button{
+    border-color: var(--keys);
+   
+    width: 116px;
+    height: 80px;
+    margin: 12px 10px;
+    border-radius: 10px;
+    color: var(--numbers);
+    font-weight: 700;
+    font-size: 38px;
+    background-color: var(--keys);
+    font-family: 'Spartan', sans-serif !important;
+
+    box-shadow: 0 3px 3px var(--shadow-keys);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+@media screen and (max-width:400px) {
+    .box-3 button{
+        width: 59px;
+        height: 60px;
+        margin: 6px 5px;
+        font-size: 23px;
+        box
+    }
+}
+
+.result, .reset{
+    
+    width:43% !important; 
+}
+
+@media screen and (max-width: 400px) {
+    .result, .reset{
+        
+        width: 44.5% !important;
+    }
+}
+.reset, .del{
+    border-color: var(--bg-del-reset) !important;
+    color: white !important;
+    font-size: 30px !important;
+    background-color: var(--bg-del-reset) !important;
+    box-shadow: 0 3px 2px var(--shadow-del-reset) !important
+}
+button.result{
+    color: var(--color-result);
+    border-color: var(--result);
+    background-color: var(--result) !important;
+    box-shadow: 0 3px 2px var(--shadow-result) !important;
+}
+
+span:hover{
+    cursor: pointer;
+    
+}
+@media screen and (max-width: 400px) {
+    span{
+        padding: 1px 4px ;
+    }
+    .reset, .del{
+        font-size: 18px !important;
+    }
+}

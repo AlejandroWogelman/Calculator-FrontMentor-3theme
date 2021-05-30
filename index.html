@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="">
+
+  <div class="container">
+      <div class="box-1">
+        <h3>calc</h3>
+        <h6>THEME</h6>
+        <div>
+          <div style="font-size: smaller; ">
+                <span id="theme1">1 </span>
+                <span id="theme2">2 </span>
+                <span id="theme3">3 </span>
+          </div>
+  
+          <div>
+            <div class="theme-select">
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box-2">
+        <input type="number" name="number" autofocus value="">
+      </div>
+      <div class="box-3">
+        <div class="btns">
+          <button id="7">7</button> <button id="8">8</button> <button id="9">9</button>  <button id="delet" class="del">DEL</button>
+          <button id="4">4</button> <button id="5">5</button> <button id="6">6</button> <button id="+">+</button>
+          <button id="1">1</button> <button id="2">2</button> <button id="3">3</button> <button id="-">-</button>
+          <button id=".">.</button> <button id="0">0</button> <button id="/">/</button> <button id="x">x</button>
+          <button id="reset" class="reset">RESET</button> <button id="result" class="result">=</button>
+        </div>
+      </div>
+    </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://alejandro-wogelman.netlify.app/" target="_blank">Alejandro</a>.
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
