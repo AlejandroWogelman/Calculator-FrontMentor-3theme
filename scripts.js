@@ -170,7 +170,7 @@ const calculator = (param)=>{
 
 
 const multiplicacion= document.getElementById('x')
-multiplicacion.addEventListener('click', calculator('x'))
+multiplicacion.addEventListener('click',()=> calculator('x'))
 
 const suma= document.getElementById("+")
 suma.addEventListener('click', ()=> calculator('+'))
